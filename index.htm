@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Devises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Convertisseur</h1>
+    </nav>
+    <div class="cardre">
+        <h2>Convertisseur de Devises</h2>
+        <input type="number" id="montant" placeholder="Entrez le montant">
+        <div class="select-group">
+            <select id="deviseDepart">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <button id="swap">⇄</button>
+            <select id="deviseArrivee">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </div>
+        <button onclick="convertir()">Convertir</button>
+        <h3 id="resultat">Résultat : </h3>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>© 2025 Convertisseur de Devises. Tous droits réservés.</p>
+        <p>BLEACH.</p>
+    </footer>
+</html>
